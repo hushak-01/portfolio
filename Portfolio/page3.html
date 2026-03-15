@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历作品集：AI商业风控与出海合规自动化</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .code-block {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8 flex justify-center selection:bg-rose-100">
+
+    <div class="max-w-7xl w-full">
+        <header class="mb-6 border-l-4 border-rose-600 pl-4 py-1">
+            <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">
+                AI辅助的B端商业风控与涉外合规自动化 (PoC)
+            </h1>
+            <p class="text-slate-500 mt-2 flex items-center text-sm font-medium">
+                <i data-lucide="scale" class="w-4 h-4 mr-1.5"></i> 业务风控 · 跨语言文献解析 · 提示词工程
+            </p>
+        </header>
+
+        <nav class="mb-8 flex flex-wrap gap-2 sm:gap-4 bg-white p-2 rounded-xl border border-slate-200 shadow-sm">
+            <a href="index.html" class="flex-1 text-center py-2.5 px-2 rounded-lg text-sm font-bold text-slate-500 hover:bg-slate-50 hover:text-slate-800 transition-colors">
+                📊 1. 废旧回收量价预测系统
+            </a>
+            <a href="page2.html" class="flex-1 text-center py-2.5 px-2 rounded-lg text-sm font-bold text-slate-500 hover:bg-slate-50 hover:text-slate-800 transition-colors">
+                👁️ 2. AI视觉核验与自动化台账
+            </a>
+            <a href="page3.html" class="flex-1 text-center py-2.5 px-2 rounded-lg text-sm font-bold bg-rose-50 text-rose-700 shadow-sm border border-rose-100 transition-colors">
+                ⚖️ 3. 商业风控与出海合规解析
+            </a>
+        </nav>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+
+            <div class="lg:col-span-5 flex flex-col gap-6">
+                <div class="glass-card rounded-2xl p-6 lg:p-8 border-t-4 border-t-amber-500">
+                    <h2 class="text-lg font-bold text-slate-800 mb-5 flex items-center border-b border-slate-100 pb-3">
+                        <i data-lucide="briefcase" class="w-5 h-5 text-amber-500 mr-2"></i> 场景一：国内B端风控维权
+                    </h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">业务痛点</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            传统回收产业链存在严重的拆迁垫资回款难、供应链违约频发问题。中小企业缺乏专职法务，外部律师咨询与文书起草成本高昂。
+                        </p>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Prompt 角色设定 (Persona)</h3>
+                        <div class="code-block p-5 rounded-xl text-xs leading-relaxed">
+<span style="color: #c678dd;">System:</span> "你现在是一位精通中国《民法典》及合同纠纷的资深企业法务。请根据我提供的违约企业信息与垫资事实，撰写一份逻辑严密、具有法律威慑力的《商业催款函》。语气需做到先礼后兵，包含明确的最后通牒期限及后续诉讼风险提示。"
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">落地成果 (STAR)</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mr-2.5 mt-0.5 shrink-0"></i>
+                                <p class="text-slate-700 text-sm leading-relaxed">主导引入大模型进行法务合规提效，成功协助公司处理真实的B端垫资呆账。</p>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mr-2.5 mt-0.5 shrink-0"></i>
+                                <p class="text-slate-700 text-sm leading-relaxed">将单份法务文书起草时间从数天缩短至 10 分钟，大幅降低外部法务咨询成本。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 flex flex-col gap-6 h-full">
+                <div class="glass-card rounded-2xl p-6 lg:p-8 h-full border-t-4 border-t-blue-500 flex flex-col">
+                    <h2 class="text-lg font-bold text-slate-800 mb-5 flex items-center border-b border-slate-100 pb-3">
+                        <i data-lucide="globe-2" class="w-5 h-5 text-blue-500 mr-2"></i> 场景二：涉外合规文档解析 (EU AI Act)
+                    </h2>
+
+                    <div class="mb-6">
+                        <p class="text-slate-600 text-sm leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <strong>业务背景：</strong>国内先进制造企业出海面临严苛监管。原始法案语言生涩，跨语种认知壁垒高。此模块展示利用 AI 大模型对 144 页英文版《欧盟AI法案》进行长文本信息提取，并转化为 B 端业务团队可直接执行的 SOP 指南。
+                        </p>
+                    </div>
+
+                    <div class="flex-1 bg-white border border-slate-200 rounded-xl overflow-hidden flex flex-col shadow-sm">
+                        <div class="bg-slate-50 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
+                            <span class="text-sm font-bold text-slate-700"><i data-lucide="file-check-2" class="w-4 h-4 inline mr-1.5 text-blue-600"></i> EU AI Act 合规排查 SOP (高风险与透明度篇)</span>
+                            <span class="text-[10px] bg-blue-100 text-blue-700 px-2 py-1 rounded uppercase tracking-wider font-bold">Auto-Generated</span>
+                        </div>
+                        
+                        <div class="p-5 overflow-y-auto max-h-[500px] text-sm space-y-5 text-slate-700">
+                            
+                            <div class="bg-slate-50/50 p-4 rounded-xl border border-slate-100 hover:border-blue-100 transition-colors">
+                                <h4 class="font-bold text-slate-800 mb-1.5">✅ 01. 确定产品风险等级与准入资质</h4>
+                                <p class="text-xs text-slate-400 mb-2.5 font-mono bg-white inline-block px-2 py-0.5 rounded border border-slate-100">Ref: Article 6 & Annex II</p>
+                                <p class="mb-1.5 leading-relaxed"><strong class="text-slate-800">【合规逻辑】</strong> 根据第6条及附件二分类规则，若 AI 被用作机械设备的“安全组件 (safety component)”，或依法需第三方合格评定（如 CE 认证），则划为高风险 AI 系统。</p>
+                                <p class="leading-relaxed"><strong class="text-slate-800">【业务落地】</strong> 业务线需在产品立项期完成风险定级。高风险产品必须建立符合第17条的质量管理体系（QMS），并预留第三方合规审查预算。</p>
+                            </div>
+
+                            <div class="bg-slate-50/50 p-4 rounded-xl border border-slate-100 hover:border-blue-100 transition-colors">
+                                <h4 class="font-bold text-slate-800 mb-1.5">✅ 02. 构建可追溯的高质量数据源</h4>
+                                <p class="text-xs text-slate-400 mb-2.5 font-mono bg-white inline-block px-2 py-0.5 rounded border border-slate-100">Ref: Article 10 (Data governance)</p>
+                                <p class="mb-1.5 leading-relaxed"><strong class="text-slate-800">【合规逻辑】</strong> 高风险 AI 的训练、验证和测试数据集必须具备相关性、代表性，并尽可能无错误和完整 (free of errors and complete)。</p>
+                                <p class="leading-relaxed"><strong class="text-slate-800">【业务落地】</strong> 建立严格的数据治理 SOP。记录工业训练数据的来源与清洗过程，从底层模型排除异常数据，确保数据覆盖欧洲目标市场的实际作业环境。</p>
+                            </div>
+
+                            <div class="bg-slate-50/50 p-4 rounded-xl border border-slate-100 hover:border-blue-100 transition-colors">
+                                <h4 class="font-bold text-slate-800 mb-1.5">✅ 03. 提升系统可解释性与输出透明度</h4>
+                                <p class="text-xs text-slate-400 mb-2.5 font-mono bg-white inline-block px-2 py-0.5 rounded border border-slate-100">Ref: Article 13 (Transparency)</p>
+                                <p class="mb-1.5 leading-relaxed"><strong class="text-slate-800">【合规逻辑】</strong> 高风险 AI 必须保证运行透明度，使部署者 (Deployers) 能够解释系统输出并适当使用。</p>
+                                <p class="leading-relaxed"><strong class="text-slate-800">【业务落地】</strong> 交付团队必须提供符合法规的《使用说明书》。明确界定 AI 能力边界、预期用途及潜在故障风险，指导客户安全运维。</p>
+                            </div>
+
+                            <div class="bg-slate-50/50 p-4 rounded-xl border border-slate-100 hover:border-blue-100 transition-colors">
+                                <h4 class="font-bold text-slate-800 mb-1.5">✅ 04. 嵌入自动日志与“人为干预”机制</h4>
+                                <p class="text-xs text-slate-400 mb-2.5 font-mono bg-white inline-block px-2 py-0.5 rounded border border-slate-100">Ref: Art 12 (Record-keeping) & Art 14</p>
+                                <p class="mb-1.5 leading-relaxed"><strong class="text-slate-800">【合规逻辑】</strong> 系统必须自动记录日志，并允许人类监督，能通过“停止”按钮 (stop button) 中断运行。</p>
+                                <p class="leading-relaxed"><strong class="text-slate-800">【业务落地】</strong> 底层架构强制加入日志模块；工业控制 HMI 必须设计物理或软件的“人为干预 (Human Override)”功能，确保操作员拥有最终控制权。</p>
+                            </div>
+
+                            <div class="bg-slate-50/50 p-4 rounded-xl border border-slate-100 hover:border-blue-100 transition-colors">
+                                <h4 class="font-bold text-slate-800 mb-1.5">✅ 05. 履行用户感知与合成内容标记义务</h4>
+                                <p class="text-xs text-slate-400 mb-2.5 font-mono bg-white inline-block px-2 py-0.5 rounded border border-slate-100">Ref: Article 50 (Transparency obs)</p>
+                                <p class="mb-1.5 leading-relaxed"><strong class="text-slate-800">【合规逻辑】</strong> 直接交互的 AI 必须告知用户；生成合成内容的 AI 必须以机器可读格式进行标记。</p>
+                                <p class="leading-relaxed"><strong class="text-slate-800">【业务落地】</strong> 智能客服模块必须设立明确提示。AI 生成的工业培训视频或合成数据，必须添加合规的专属标识或底层数字水印。</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

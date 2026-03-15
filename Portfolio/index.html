@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简历作品集：再生资源回收量价预测系统（PoC）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .markdown-body p { margin-bottom: 0.75em; line-height: 1.6; }
+        .markdown-body strong { color: #1e293b; font-weight: 600; }
+        .markdown-body ul { list-style-type: disc; padding-left: 1.5em; margin-bottom: 0.75em; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8 flex justify-center selection:bg-blue-100">
+
+    <div class="max-w-7xl w-full">
+        <header class="mb-6 border-l-4 border-blue-600 pl-4 py-1">
+            <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight">
+                基于Python与时间序列的再生资源回收量价预测系统（PoC）
+            </h1>
+            <p class="text-slate-500 mt-2 flex items-center text-sm font-medium">
+                <i data-lucide="bar-chart-3" class="w-4 h-4 mr-1.5"></i> 数据分析 · 算法应用 · AI 决策支持
+            </p>
+        </header>
+
+        <nav class="mb-8 flex flex-wrap gap-2 sm:gap-4 bg-white p-2 rounded-xl border border-slate-200 shadow-sm">
+            <a href="index.html" class="flex-1 text-center py-2.5 px-2 rounded-lg text-sm font-bold bg-blue-50 text-blue-700 shadow-sm border border-blue-100 transition-colors">
+                📊 1. 废旧回收量价预测系统
+            </a>
+            <a href="page2.html" class="flex-1 text-center py-2.5 px-2 rounded-lg text-sm font-bold text-slate-500 hover:bg-slate-50 hover:text-slate-800 transition-colors">
+                👁️ 2. AI视觉核验与自动化台账
+            </a>
+            <a href="page3.html" class="flex-1 text-center py-2.5 px-2 rounded-lg text-sm font-bold text-slate-500 hover:bg-slate-50 hover:text-slate-800 transition-colors">
+                ⚖️ 3. 商业风控与出海合规解析
+            </a>
+        </nav>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+            <div class="lg:col-span-5 flex flex-col gap-6">
+                <div class="glass-card rounded-2xl p-4 transition-all hover:shadow-lg">
+                    <div class="overflow-hidden rounded-xl border border-slate-100 bg-white">
+                        <img src="image_c8009a.png" onerror="this.onerror=null; this.src='https://placehold.co/800x450/f0f9ff/0369a1?text=本地查看：请把图1和本网页放在同一个文件夹';" alt="图1：紫铜采购均价与市场期货价的走势对比" class="w-full object-contain hover:scale-[1.02] transition-transform duration-300">
+                    </div>
+                    <div class="mt-4 flex items-start px-1">
+                        <div class="bg-blue-50 text-blue-600 p-1.5 rounded-lg mr-3 shrink-0">
+                            <i data-lucide="trending-up" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <strong class="text-slate-800 block mb-0.5">图1：采购均价与市场期货价走势对比</strong>
+                            直观展示数据清洗后，采购价格与市场大盘的高拟合度。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-4 transition-all hover:shadow-lg">
+                    <div class="overflow-hidden rounded-xl border border-slate-100 bg-white">
+                        <img src="image_c80096.png" onerror="this.onerror=null; this.src='https://placehold.co/800x450/eef2ff/4338ca?text=本地查看：请把图2和本网页放在同一个文件夹';" alt="图2：紫铜入库量散点与趋势预测图" class="w-full object-contain hover:scale-[1.02] transition-transform duration-300">
+                    </div>
+                    <div class="mt-4 flex items-start px-1">
+                        <div class="bg-indigo-50 text-indigo-600 p-1.5 rounded-lg mr-3 shrink-0">
+                            <i data-lucide="scatter-chart" class="w-5 h-5"></i>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <strong class="text-slate-800 block mb-0.5">图2：入库量散点与趋势预测基线</strong>
+                            通过滑动均线平滑离散波动，清晰呈现入库量的周期性趋势。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 flex flex-col gap-6 h-full">
+                <div class="glass-card rounded-2xl p-6 relative overflow-hidden group">
+                    <div class="absolute -right-6 -top-6 w-24 h-24 bg-blue-50 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-700"></div>
+                    
+                    <h2 class="text-lg font-bold text-slate-800 mb-5 flex items-center border-b border-slate-100 pb-3">
+                        <i data-lucide="target" class="w-5 h-5 text-blue-500 mr-2"></i> 项目背景与架构
+                    </h2>
+
+                    <div class="mb-6">
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Pain Points / 痛点</h3>
+                        <div class="bg-red-50/60 p-3.5 rounded-xl border border-red-100/50 flex items-start">
+                            <i data-lucide="alert-circle" class="w-5 h-5 text-red-500 mr-2.5 shrink-0 mt-0.5"></i>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                传统回收台账缺失率达 <strong class="text-red-600 text-base">15%</strong> 以上，人为录入错误频发，难以做价格预判。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Tech Stack / 技术栈</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 bg-slate-800 text-white rounded-lg text-xs font-medium flex items-center shadow-sm">
+                                <i data-lucide="terminal" class="w-3.5 h-3.5 mr-1.5"></i> Python (Pandas/NumPy/Matplotlib)
+                            </span>
+                            <span class="px-3 py-1.5 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-medium border border-indigo-100">
+                                统计学差值算法
+                            </span>
+                            <span class="px-3 py-1.5 bg-cyan-50 text-cyan-700 rounded-lg text-xs font-medium border border-cyan-100">
+                                滑动平均预测
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 relative overflow-hidden group">
+                    <div class="absolute -right-6 -top-6 w-24 h-24 bg-emerald-50 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-700"></div>
+
+                    <h2 class="text-lg font-bold text-slate-800 mb-5 flex items-center border-b border-slate-100 pb-3">
+                        <i data-lucide="award" class="w-5 h-5 text-emerald-500 mr-2"></i> 核心成果与反思 (STAR)
+                    </h2>
+
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                                <span class="text-xs font-bold">1</span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                完成 <strong class="text-blue-600 text-base">1000天量级</strong> 非结构化台账的清洗（采用均值/线性插值/前向填充）。
+                            </p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                                <span class="text-xs font-bold">2</span>
+                            </div>
+                            <p class="text-slate-700 text-sm leading-relaxed">
+                                构建基础时间序列趋势基线，辅助平滑异常波动，为公司提供采购定价与库存备货的<strong>量化参考依据</strong>。
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50/30 rounded-xl p-4 border border-amber-100/80">
+                        <h3 class="text-sm font-bold text-amber-900 mb-1.5 flex items-center">
+                            <i data-lucide="lightbulb" class="w-4 h-4 text-amber-500 mr-1.5"></i> 洞察反思
+                        </h3>
+                        <p class="text-amber-800/90 text-sm leading-relaxed">
+                            发现纯算法清洗对“<strong>逻辑性人为错漏</strong>”（如品类张冠李戴）存在局限，从而主动推动了后续 <strong>AI自动化视觉核验工具</strong> 的立项与开发。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 border-l-4 border-l-purple-500 flex-1 flex flex-col">
+                    <h2 class="text-lg font-bold text-slate-800 mb-2 flex items-center justify-between">
+                        <span class="flex items-center">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-purple-500 mr-2"></i> 
+                            AI 决策辅助系统 (前端 Mock 演示)
+                        </span>
+                        <span class="text-[10px] font-bold bg-purple-100 text-purple-600 px-2 py-0.5 rounded-full">LIVE DEMO</span>
+                    </h2>
+                    <p class="text-xs text-slate-500 mb-4">输入当前市场情境，系统结合历史台账数据特征，生成采购备货建议。</p>
+
+                    <div class="flex flex-col gap-3 flex-1">
+                        <div class="relative">
+                            <textarea id="ai-prompt" rows="3" class="w-full text-sm p-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 outline-none resize-none transition-shadow text-slate-700" placeholder="例如：描述目前的市场情况...">当前紫铜期货价格呈现小幅回落震荡（见图1近期趋势），但根据我们建立的30天滑动均线，入库量目前处于历史低位。作为采购经理，下周我应该如何调整采购策略？</textarea>
+                            <button id="generate-btn" class="absolute bottom-3 right-3 bg-purple-600 hover:bg-purple-700 text-white p-1.5 rounded-lg transition-colors flex items-center shadow-sm text-xs font-medium px-3">
+                                <i data-lucide="zap" class="w-3.5 h-3.5 mr-1"></i> 生成策略
+                            </button>
+                        </div>
+
+                        <div id="ai-response-container" class="flex-1 bg-slate-50 border border-slate-200 rounded-xl p-4 text-sm text-slate-700 hidden relative overflow-hidden min-h-[120px]">
+                            <div id="loading-spinner" class="absolute inset-0 bg-slate-50/80 flex flex-col items-center justify-center hidden backdrop-blur-sm z-10">
+                                <i data-lucide="loader-2" class="w-6 h-6 text-purple-600 animate-spin mb-2"></i>
+                                <span class="text-xs text-purple-600 font-medium tracking-widest uppercase">模型分析中...</span>
+                            </div>
+                            <div id="ai-response-text" class="markdown-body h-full overflow-y-auto"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 初始化图标
+        lucide.createIcons();
+
+        const generateBtn = document.getElementById('generate-btn');
+        const promptInput = document.getElementById('ai-prompt');
+        const responseContainer = document.getElementById('ai-response-container');
+        const responseText = document.getElementById('ai-response-text');
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        generateBtn.addEventListener('click', () => {
+            const text = promptInput.value.trim();
+            if (!text) return;
+
+            // UI 状态切换
+            responseContainer.classList.remove('hidden');
+            loadingSpinner.classList.remove('hidden');
+            responseText.innerHTML = '';
+            generateBtn.disabled = true;
+            generateBtn.classList.add('opacity-70', 'cursor-not-allowed');
+
+            // 模拟 API 延迟 (断开真实请求，避免 Key 泄露)
+            setTimeout(() => {
+                loadingSpinner.classList.add('hidden');
+                generateBtn.disabled = false;
+                generateBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+                
+                // 预设的结构化返回内容
+                responseText.innerHTML = `
+                    <p><strong>📊 趋势洞察：</strong></p>
+                    <ul>
+                        <li>当前紫铜期货价格回落，但结合系统计算的 30 天滑动均线，价格已触及支撑位，进一步大幅下探空间有限。</li>
+                        <li>近期入库量持续处于历史低位，说明上游市场存在观望情绪，供应商普遍惜售。</li>
+                    </ul>
+                    <p><strong>⚡ 行动建议：</strong></p>
+                    <ul>
+                        <li><strong>逢低建仓：</strong> 建议在下周一/二以低于大盘 2% 的价格小幅增加采购量，补充安全库存。</li>
+                        <li><strong>风险对冲：</strong> 避免一次性大额锁单，采取分批次点价策略以对冲震荡风险。</li>
+                    </ul>
+                    <br>
+                    <p class="text-[10px] text-slate-400 border-t border-slate-200 pt-2">注：为保护 API Key 安全，在线版本已切换为前端演示模式。底层真实 Python 调用代码已跑通。</p>
+                `;
+                lucide.createIcons();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
